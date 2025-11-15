@@ -1,12 +1,12 @@
 import sys
 
 N = int(sys.stdin.read())
-S = 1
+S = 0
 
 while True:
-    if N % (N**0.5) == 0:
+    if N % 2 == 0:
         S += 1
-        N = N**0.5
+        N = N/2
     else:
         break
 
