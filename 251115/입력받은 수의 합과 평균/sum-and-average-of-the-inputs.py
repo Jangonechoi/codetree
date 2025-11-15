@@ -5,4 +5,4 @@ a = list(map(int, sys.stdin.read().split()))
 s = sum(a) - a[0]
 avg = s/(len(a)-1)
 
-print(s, avg)
+print(f"{s} {avg:.1f}")
