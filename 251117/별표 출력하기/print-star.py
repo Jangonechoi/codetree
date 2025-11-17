@@ -8,7 +8,7 @@ for i in range(2*N-1):
         print('*', end=' ')
     print()
 
-    if i < 4:
+    if i < N-1:
         cnt += 1
     else:
         cnt -= 1
