@@ -7,7 +7,7 @@ s = len(arr2)
 
 def is_subsequence(arr1, arr2):
     if s > m:
-        print('No')
+        return('No')
     for i in range(m - s +1):
         current_slice = arr1[i : i + s]
         if current_slice == arr2:
