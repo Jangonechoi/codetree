@@ -6,12 +6,12 @@ if n == m:
 a = n*m
 b = 0
 if n > m:
-    for i in range(-m,-(m // 2)+1):
+    for i in range(-m,1):
         if m % -i == 0 and n % -i == 0:
             b = -i
             break
 else:
-    for i in range(-n,-(n // 2)+1):
+    for i in range(-n,1):
         if n % -i == 0 and m % -i == 0:
             b = -i
             break
