@@ -3,15 +3,16 @@ arr = [int(input()) for _ in range(n)]
 
 # Please write your code here.
 # print(n, arr)
-count = 0
-MaxCount = 0
-if len(arr) == 1:
-    print(1)
+count = 1
+MaxCount = 1
+
+if n == 1:
+    print(MaxCount)
 else:
-    for i in range(n-1):
-        if i == 0 or arr[i] == arr[i+1]:
+    for i in range(1,n):
+        if arr[i-1] == arr[i]:
             count += 1
         elif MaxCount < count:
             MaxCount = count
-            count = 0
+            count = 1
     print(MaxCount)
