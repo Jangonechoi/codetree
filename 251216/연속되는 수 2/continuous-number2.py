@@ -12,9 +12,10 @@ else:
     for i in range(1,n):
         if arr[i-1] == arr[i]:
             count += 1
-        elif MaxCount < count:
-            MaxCount = count
+        else:
+            if MaxCount < count:
+                MaxCount = count
             count = 1
-        if i == n-1 and MaxCount < count:
-            MaxCount = count
+    if MaxCount < count:
+        MaxCount = count
     print(MaxCount)
