@@ -15,4 +15,6 @@ else:
         elif MaxCount < count:
             MaxCount = count
             count = 1
+        if i == n-1 and MaxCount < count:
+            MaxCount = count
     print(MaxCount)
