@@ -9,7 +9,11 @@ for i in range(M):
     arr[student[i]] += 1
     if K in arr:
         break
-print(arr.index(K))
+
+if K in arr:
+    print(arr.index(K))
+else:
+    print(-1)
 
 
 
