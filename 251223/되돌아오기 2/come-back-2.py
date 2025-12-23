@@ -21,7 +21,7 @@ for i in range(len(commands)):
     elif commands[i] == 'R':
         dir_num = (dir_num + 1) % 4
         elapsed_time += 1
-    elif commands == 'L':
+    elif commands[i] == 'L':
         dir_num = (dir_num + 3) % 4
         elapsed_time += 1
 
